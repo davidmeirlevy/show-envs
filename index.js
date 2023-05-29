@@ -15,4 +15,4 @@ app().use('*', (req, res) => {
     res.send(html)
 })
 
-start('show-envs', 3000, '0.0.0.0')
+start('show-envs', process.env.PORT || 3000, '0.0.0.0')
